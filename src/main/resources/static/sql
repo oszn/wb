@@ -1,0 +1,5 @@
+{
+  "insert_user":"insert into AccountInformation values(%s,%s);",
+  "select_user_count": "select count(*) as n from AccountInformation where id=%s",
+  "select_user": "select count(*) as p from AccountInformation where id=%s and password='%s' "
+}

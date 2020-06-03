@@ -1,0 +1,21 @@
+{
+  "insert_user":"insert into AccountInformation values(%s,'%s','%s','%s');",
+  "select_user_count": "select count(*) as n from AccountInformation where id=%s",
+  "select_user": "select count(*) as p from AccountInformation where id=%s and password='%s' ",
+  "select_ecount": "select count(*) as n from AccountInformation where email='%s'",
+  "select_e_c": "select id from AccountInformation where email='%s' ",
+  "update_c": "UPDATE AccountInformation set Password='%s' where id=%s",
+  "insert_weibo": "INSERT into WeiboInformation(id,Time,LikeCount,WeiBoContext) VALUE(%s,'%s',0,'%s')",
+  "select_wid": "SELECT WeiboInformation.WeiboId as id from WeiboInformation where id=%s and time='%s' and WeiBoContext='%s';",
+  "insert_photo": "insert into WeiboPhoto(WeiboId,PhotoAddress) value(%s,'%s')",
+  "insert_comment": "insert into WeiboComment(WeiboId,FromId,Told,CommentContext,CommentLikeCount) VALUE(%s,%s,%s,'%s',0);",
+  "select_u_id":"select name from AccountInformation where id=%s",
+  "select_w_c": "SELECT count(*) as n from WeiboInformation WHERE id=%s",
+  "select_weibo": "SELECT * from WeiboInformation where id=%s",
+  "insert_comment": "insert into WeiboComment(WeiboId,FromId,ToId,CommentContext,CommentLikeCount,Time) value(%s,%s,%s,'%s',0,'%s')",
+  "select_cid": " SELECT CommentId  from WeiboComment where WeiboId='%s' and FromId='%s' and ToId='%s' and CommentContext='%s';",
+  "select_count_wb": "SELECT count(*) as n from WeiboInformation where id=%s",
+  "update_head_img": "update AccountInformation set headImg='%s' where id='%s'",
+  "select_friends_weibo": "SELECT WeiboId,Id,Time,LikeCount,WeiBoContext from WeiboInformation where %s  ORDER BY Time desc limit 10",
+  "select_id_name_img": "select id,name,headImg from AccountInformation"
+}

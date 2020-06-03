@@ -1,0 +1,12 @@
+{
+  "person_info": {
+    "sql": "MATCH (E:user) where E.id='%s' return E.id as id,E.name as name,E.age as age",
+    "para": "id"
+  },
+  "insert_info": {
+    "sql": "create(p:product{id:%s,type1:%s,type2:%s,type3:%s})",
+    "para": "id,type1,type2,type3"
+  },
+  "insert_person": "merge(p:person{id:%s})",
+  "create_link": "match(u1:person),(u2:person) where not (u1)-[:link]->(u2) and u1<>u2 and u1.id=%s and u2.id=%s create(u1)-[l:link]->(u2)"
+}

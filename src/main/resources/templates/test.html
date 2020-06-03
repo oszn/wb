@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    $.ajax({
+        url: "http://localhost:8080/login",
+        data: {user: '1091',pwd:"123456"},
+        type: "POST",
+        dataType: "json",
+        success: function(data) {
+            // data = jQuery.parseJSON(data);  //dataType指明了返回数据为json类型，故不需要再反序列化
+        }
+
+    });
+</script>
+</html>
