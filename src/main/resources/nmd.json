@@ -9,7 +9,7 @@
   },{
 
   }],
-  "insert_passge_id": "merge(p:passage{id:%s})",
+  "insert_passge_id": "match(pe:person) where pe.id=%s merge(p:passage{id:%s,contex:'%s',type:%s}) create(pe)-[w:write]->(p)",
   "insert_person": "merge(p:person{id:%s})",
   "create_link": "match(u1:person),(u2:person) where not (u1)-[:link]->(u2) and u1<>u2 and u1.id=%s and u2.id=%s create(u1)-[l:link]->(u2)",
   "insert_ming": "merge(p:ming{id:'%s'}) on match set p.count=p.count+1 on create set p.count=1",
@@ -20,6 +20,8 @@
   "select_fan_num": "match p=(n1)-[:link]->(n2) where n1.id=%s return n2.id as id",
   "select_attention_num": "match p=(n1)-[:link]->(n2) where n2.id=%s return n1.id as id",
   "del_link": "match (n1:person)-[c:link]->(n2:person) where n1.id=%s and n2.id=%s delete c",
-  "relationship_person2person": "match c=(n1:person),(n2:person)\nwhere n1.id=%s and n2.id=%s\nreturn \ncase\n\twhen (n1)-[:link]->(n2) and (n2)-[:link]->(n1)\n    \tThen 0\n     when (n1)-[:link]->(n2)\n    \tThen 1\n     when (n2)-[:link]->(n1)\n    \tThen 2\n    else 3\nEnd as p"
-
+  "relationship_person2person": "match c=(n1:person),(n2:person)\nwhere n1.id=%s and n2.id=%s\nreturn \ncase\n\twhen (n1)-[:link]->(n2) and (n2)-[:link]->(n1)\n    \tThen 0\n     when (n1)-[:link]->(n2)\n    \tThen 1\n     when (n2)-[:link]->(n1)\n    \tThen 2\n    else 3\nEnd as p",
+  "import_word": "match(n:ImpWord) where n.id=%s return  n.name",
+  "sign_word": "match(p:passage),(n:ImpWord)\nwhere p.id=%s and n.id=%s and (%s)\ncreate(p)-[:sign]->(n)",
+  "get_write": "match (p)-[:write]->(c)\nwhere p.id=%s\nreturn c.type"
 }

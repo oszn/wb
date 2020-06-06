@@ -7,6 +7,7 @@ import org.ansj.domain.Term;
 import org.ansj.splitWord.analysis.ToAnalysis;
 
 import org.apache.lucene.util.Version;
+import org.neo4j.cypher.internal.frontend.v2_3.ast.functions.Str;
 import org.neo4j.register.Register;
 import org.thymeleaf.expression.Lists;
 
@@ -43,10 +44,10 @@ public class Sen2Word {
         }
         return rp;
     }
-    public void ins(String str,String id){
+    public void ins(String str, String id, String owner,String t){
         List<String> tp=get_list (str);
         if(tp.size ()!=0)
-        tfs.set_connect (tp,id);
+        tfs.set_connect (tp,id,owner,str,t);
     }
     public void prtTimer(long start){
         System.out.println (System.currentTimeMillis ()-start);
@@ -61,22 +62,22 @@ public class Sen2Word {
         prtTimer (start);
         return x;
     }
-    public  void readCsvFile(){
-        File csv=new File ("src/main/java/com/example/demo/fenci/weibo_senti_100k.csv");
-        try {
-            BufferedReader text=new BufferedReader (new FileReader (csv));
-            String line="";
-            int k=0;
-            while((line=text.readLine ())!=null){
-                String a=line.substring (line.indexOf (',')+1);
-                this.ins (a,String.valueOf (k));
-                k++;
-//                System.out.println (b);
-            }
-        } catch (IOException e) {
-            e.printStackTrace ();
-        }
-    }
+//    public  void readCsvFile(){
+//        File csv=new File ("src/main/java/com/example/demo/fenci/weibo_senti_100k.csv");
+//        try {
+//            BufferedReader text=new BufferedReader (new FileReader (csv));
+//            String line="";
+//            int k=0;
+//            while((line=text.readLine ())!=null){
+//                String a=line.substring (line.indexOf (',')+1);
+//                this.ins (a,String.valueOf (k));
+//                k++;
+////                System.out.println (b);
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace ();
+//        }
+//    }
 
 
     public static void main(String[] args) {

@@ -1,17 +1,9 @@
 package com.example.red;
 
-import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
-import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisCluster;
 import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.params.SetParams;
 
-import java.security.acl.LastOwnerException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class fredis {
     private JedisPool jedisPool;
@@ -44,33 +36,51 @@ public class fredis {
     }
     public HashMap getMap(String key){
         Jedis jedis=jedisPool.getResource ();
+        HashMap hmap= (HashMap) jedis.hgetAll (key);
         jedis.close ();
-        return (HashMap) jedis.hgetAll (key);
+        return hmap;
+    }
+    public void set_hot_word(String key){
+        Jedis jedis=jedisPool.getResource ();
+        if(jedis.hexists ("hot",key)){
+            jedis.hincrBy ("hot",key,1);
+        }else {
+            jedis.hset ("hot",key, String.valueOf (1));
+        }
+        jedis.close ();
+    }
+    public List<Map.Entry<String, Integer>> value_sort( HashMap<String,String> map){
+        List<Map.Entry<String, Integer>> listEntry=new ArrayList<> ();
+        HashMap<String,Integer> x=new HashMap<> ();
+        for(String ky:map.keySet ()){
+            x.put (ky,Integer.parseInt (map.get (ky)));
+        }
+        listEntry.addAll (x.entrySet ());
+
+        Collections.sort (listEntry, new Comparator<Map.Entry<String, Integer>> () {
+            @Override
+            public int compare(Map.Entry<String,  Integer> o1, Map.Entry<String,  Integer> o2) {
+                int a1=Integer.valueOf (o1.getValue ());
+                int a2=Integer.valueOf (o2.getValue ());
+                return o2.getValue ().compareTo (o1.getValue ());
+            }
+        });
+        return listEntry;
     }
 //    public boolean exit(){}
+    public List<Map.Entry<String, Integer>> getHot(String key){
+        Jedis jedis=jedisPool.getResource ();
+        HashMap<String,String> map=getMap (key);
+        List<Map.Entry<String, Integer>> entryList=value_sort (map);
+        jedis.close ();
+        return entryList;
+    }
 
     public void toList(String key,List<String> x){
         Jedis jedis=jedisPool.getResource ();
-        int l= Math.toIntExact (len (key));
-        List<String> temp=getList (key);
-        for(String p:x)
-        {
-            temp.remove (p);
-            temp.add (p);
+        for(int i=0;i<x.size ();i++){
+            jedis.lpush (key,x.get (i));
         }
-        if(l>60){
-            List<String> np=new ArrayList<> ();
-            jedis.del (key);
-            for(int i=0;i<30;i++){
-                jedis.lpush (key,temp.get (i));
-            }
-        }else{
-            jedis.del (key);
-            for(String p:temp){
-                jedis.lpush (key,p);
-            }
-        }
-        jedis.expire (key,600);
         jedis.close ();
     }
     public Long len(String key){
@@ -86,6 +96,14 @@ public class fredis {
         return list;
     }
     public static void main(String[] args) {
+        fredis r=new fredis ();
+        for(int i=0;i<10;i++) {
+            r.set_hot_word ("hello");
+//            r.set_hot_word ("liuyi");
+            r.set_hot_word ("ouye");
+        }
+        List<Map.Entry<String, Integer>> c = r.getHot ("hot");
 
+        System.out.println (1);
     }
 }

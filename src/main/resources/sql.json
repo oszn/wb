@@ -1,11 +1,11 @@
 {
-  "insert_user":"insert into AccountInformation values(%s,'%s','%s','%s');",
+  "insert_user":"insert into AccountInformation(Id,Password,Email,name) values(%s,'%s','%s','%s');",
   "select_user_count": "select count(*) as n from AccountInformation where id=%s",
   "select_user": "select count(*) as p from AccountInformation where id=%s and password='%s' ",
   "select_ecount": "select count(*) as n from AccountInformation where email='%s'",
   "select_e_c": "select id from AccountInformation where email='%s' ",
   "update_c": "UPDATE AccountInformation set Password='%s' where id=%s",
-  "insert_weibo": "INSERT into WeiboInformation(id,Time,LikeCount,WeiBoContext) VALUE(%s,'%s',0,'%s')",
+  "insert_weibo": "INSERT into WeiboInformation(id,Time,LikeCount,WeiBoContext,type) VALUE(%s,'%s',0,'%s','%s')",
   "select_wid": "SELECT WeiboInformation.WeiboId as id from WeiboInformation where id=%s and time='%s' and WeiBoContext='%s';",
   "insert_photo": "insert into WeiboPhoto(WeiboId,PhotoAddress) value(%s,'%s')",
   "insert_comment": "insert into WeiboComment(WeiboId,FromId,Told,CommentContext,CommentLikeCount) VALUE(%s,%s,%s,'%s',0);",
@@ -17,5 +17,8 @@
   "select_count_wb": "SELECT count(*) as n from WeiboInformation where id=%s",
   "update_head_img": "update AccountInformation set headImg='%s' where id='%s'",
   "select_friends_weibo": "SELECT WeiboId,Id,Time,LikeCount,WeiBoContext from WeiboInformation where %s  ORDER BY Time desc limit 10",
-  "select_id_name_img": "select id,name,headImg from AccountInformation"
+  "select_id_name_img": "select id,name,headImg from AccountInformation",
+  "insert_search_record": "insert into SearchRecord(userid,context,type) value(%s,%s,%s)",
+  "sel_interest_wb": "select WeiboId,Id,Time,LikeCount,WeiBoContext from WeiboInformation where %s  ORDER BY Time desc limit 10",
+  "sel_interest": "select search,`write` from UserInterest where userid=%s"
 }
