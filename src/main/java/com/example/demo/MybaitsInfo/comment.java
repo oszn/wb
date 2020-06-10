@@ -1,15 +1,9 @@
-package com.example.demo.person;
+package com.example.demo.MybaitsInfo;
 
-import com.sun.org.apache.regexp.internal.RE;
+
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
-import org.junit.runner.RunWith;
-import org.neo4j.register.Register;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.List;
 
 public class comment {
 
@@ -78,7 +72,7 @@ public class comment {
             jsonObject.put ("inputShow",false);
             jsonObject.put ("commentNum",i);
             jsonObject.put("commentId",CommentId);
-//            jsonObject.put ("fromHeadImg","http://121.89.166.24/files/photo/15900768000.jpg");
+//            jsonObject.put ("fromHeadImg","http://localhost/files/photo/15900768000.jpg");
         } catch (JSONException e) {
             e.printStackTrace ();
         }

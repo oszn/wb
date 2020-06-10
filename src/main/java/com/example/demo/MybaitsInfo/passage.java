@@ -1,8 +1,10 @@
-package com.example.demo.person;
+package com.example.demo.MybaitsInfo;
 
 
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
+
+import java.util.Objects;
 
 public class passage {
     public String getWeiboId() {
@@ -18,6 +20,23 @@ public class passage {
     private String Time;
     private String LikeCount;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass () != o.getClass ()) return false;
+        passage passage = (passage) o;
+        return WeiboId.equals (passage.WeiboId) &&
+                Id.equals (passage.Id) &&
+                Time.equals (passage.Time) &&
+                LikeCount.equals (passage.LikeCount) &&
+                WeiBoContext.equals (passage.WeiBoContext);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash (WeiboId, Id, Time, LikeCount, WeiBoContext);
+    }
+
     public JSONObject get_js(){
         JSONObject temp=new JSONObject ();
         try {
@@ -27,7 +46,7 @@ public class passage {
             temp.put ("comment",WeiBoContext);
             temp.put ("inputShow",false);
             temp.put ("weiboId",WeiboId);
-//            temp.put ("headImg","http://121.89.166.24/files/photo/15902053910.png");
+//            temp.put ("headImg","http://localhost/files/photo/15902053910.png");
         } catch (JSONException e) {
             e.printStackTrace ();
         }

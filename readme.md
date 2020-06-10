@@ -214,7 +214,7 @@ http://127.0.0.1:8080/upload/headImg
 }
 
 ```
-bzd(mysql)改了几个地方，从
+Mysql(mysql)改了几个地方，从
 
 ![](img/31.png)
 这里以后全是新加的
@@ -290,9 +290,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 1,
             "img": [
-                "http://121.89.166.24/files/photo/15909325230.jpg"
+                "http://localhost/files/photo/15909325230.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 2,
             "weiboId": "108",
@@ -304,7 +304,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1091756452,
                     "commentNum": 0,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 1,
                     "commentId": 18,
                     "comment": "5656",
@@ -319,7 +319,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "47",
@@ -332,7 +332,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "60",
@@ -345,7 +345,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "59",
@@ -358,10 +358,10 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15902053910.png",
-                "http://121.89.166.24/files/photo/15902053910.png"
+                "http://localhost/files/photo/15902053910.png",
+                "http://localhost/files/photo/15902053910.png"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "54",
@@ -374,7 +374,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 8,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 6,
             "weiboId": "53",
@@ -386,7 +386,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1,
                     "commentNum": 0,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 13,
                     "commentId": 2,
                     "comment": "你的18n了？",
@@ -451,7 +451,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1091756452,
                     "commentNum": 5,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 7,
                     "comment": "",
@@ -464,7 +464,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1,
                     "commentNum": 6,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 11,
                     "comment": "。。。。。",
@@ -477,7 +477,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1091756452,
                     "commentNum": 7,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 14,
                     "comment": "晚上好",
@@ -492,7 +492,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "51",
@@ -505,10 +505,10 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 7,
             "img": [
-                "http://121.89.166.24/files/photo/15902053910.png",
-                "http://121.89.166.24/files/photo/15902053911.jpg"
+                "http://localhost/files/photo/15902053910.png",
+                "http://localhost/files/photo/15902053911.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 69,
             "weiboId": "46",
@@ -520,7 +520,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1091756452,
                     "commentNum": 0,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 8,
                     "comment": "狠人",
@@ -533,7 +533,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1091756452,
                     "commentNum": 1,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 9,
                     "comment": "。。。。。",
@@ -546,7 +546,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1091756452,
                     "commentNum": 2,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 10,
                     "comment": "？？？？",
@@ -559,7 +559,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1091756452,
                     "commentNum": 3,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 12,
                     "comment": "。。。",
@@ -572,7 +572,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1091756452,
                     "commentNum": 4,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 13,
                     "comment": "为什么",
@@ -585,7 +585,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1091756452,
                     "commentNum": 5,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 16,
                     "comment": "打发",
@@ -598,7 +598,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1091756452,
                     "commentNum": 6,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 17,
                     "comment": "打发2",
@@ -613,7 +613,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "48",
@@ -626,7 +626,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "49",
@@ -639,7 +639,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "52",
@@ -652,7 +652,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "50",
@@ -665,9 +665,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "85",
@@ -680,7 +680,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "83",
@@ -693,9 +693,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "86",
@@ -708,9 +708,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "87",
@@ -723,9 +723,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "88",
@@ -738,9 +738,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "89",
@@ -753,9 +753,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "90",
@@ -768,9 +768,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "91",
@@ -783,9 +783,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "92",
@@ -798,9 +798,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "93",
@@ -813,9 +813,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "94",
@@ -828,9 +828,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "95",
@@ -843,9 +843,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "96",
@@ -858,9 +858,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "97",
@@ -873,9 +873,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "98",
@@ -888,9 +888,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "99",
@@ -903,9 +903,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "100",
@@ -918,9 +918,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "101",
@@ -933,9 +933,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "102",
@@ -948,9 +948,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "103",
@@ -963,9 +963,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "104",
@@ -978,9 +978,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "105",
@@ -993,9 +993,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "106",
@@ -1008,9 +1008,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "107",
@@ -1023,10 +1023,10 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg",
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg",
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "72",
@@ -1039,9 +1039,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "57",
@@ -1054,9 +1054,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 12,
             "weiboId": "58",
@@ -1069,9 +1069,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "55",
@@ -1084,10 +1084,10 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg",
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg",
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "64",
@@ -1100,9 +1100,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "65",
@@ -1115,9 +1115,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "66",
@@ -1130,7 +1130,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "67",
@@ -1143,9 +1143,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "68",
@@ -1158,9 +1158,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "69",
@@ -1173,9 +1173,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "70",
@@ -1188,9 +1188,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "71",
@@ -1203,9 +1203,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "84",
@@ -1218,7 +1218,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "73",
@@ -1231,9 +1231,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "74",
@@ -1246,9 +1246,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "75",
@@ -1261,9 +1261,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "76",
@@ -1276,9 +1276,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "77",
@@ -1291,9 +1291,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "78",
@@ -1306,9 +1306,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "79",
@@ -1321,7 +1321,7 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "80",
@@ -1334,9 +1334,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "81",
@@ -1349,10 +1349,10 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg",
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg",
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "82",
@@ -1365,9 +1365,9 @@ http://127.0.0.1:8080/response/friend
         {
             "commentNum": 1,
             "img": [
-                "http://121.89.166.24/files/photo/15900768000.jpg"
+                "http://localhost/files/photo/15900768000.jpg"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 1,
             "weiboId": "56",
@@ -1379,7 +1379,7 @@ http://127.0.0.1:8080/response/friend
                 {
                     "toId": 1091756452,
                     "commentNum": 0,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 15,
                     "comment": "服了",
@@ -1434,10 +1434,10 @@ http://127.0.0.1:8080/search
         {
             "commentNum": 0,
             "img": [
-                "http://121.89.166.24/files/photo/15902053910.png",
-                "http://121.89.166.24/files/photo/15902053910.png"
+                "http://localhost/files/photo/15902053910.png",
+                "http://localhost/files/photo/15902053910.png"
             ],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 0,
             "weiboId": "54",
@@ -1450,7 +1450,7 @@ http://127.0.0.1:8080/search
         {
             "commentNum": 8,
             "img": [],
-            "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+            "headImg": "http://localhost/files/photo/1590932913.jpg",
             "MyName": "帅气啊刘",
             "like": 6,
             "weiboId": "53",
@@ -1462,7 +1462,7 @@ http://127.0.0.1:8080/search
                 {
                     "toId": 1,
                     "commentNum": 0,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 13,
                     "commentId": 2,
                     "comment": "你的18n了？",
@@ -1527,7 +1527,7 @@ http://127.0.0.1:8080/search
                 {
                     "toId": 1091756452,
                     "commentNum": 5,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 7,
                     "comment": "",
@@ -1540,7 +1540,7 @@ http://127.0.0.1:8080/search
                 {
                     "toId": 1,
                     "commentNum": 6,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 11,
                     "comment": "。。。。。",
@@ -1553,7 +1553,7 @@ http://127.0.0.1:8080/search
                 {
                     "toId": 1091756452,
                     "commentNum": 7,
-                    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+                    "headImg": "http://localhost/files/photo/1590932913.jpg",
                     "like": 0,
                     "commentId": 14,
                     "comment": "晚上好",
@@ -1606,7 +1606,7 @@ http://127.0.0.1:8080/search
 ```json
 
 {
-    "myHeader": "http://121.89.166.24/files/photo/1590932913.jpg",
+    "myHeader": "http://localhost/files/photo/1590932913.jpg",
     "btnShow": false,
     "comments": [],
     "myId": "100086",
@@ -1629,7 +1629,7 @@ search_user就出现了与帅相关的。
 ```json
 
 {
-    "myHeader": "http://121.89.166.24/files/photo/1590932913.jpg",
+    "myHeader": "http://localhost/files/photo/1590932913.jpg",
     "btnShow": false,
     "comments": [],
     "myId": "100086",
@@ -1707,7 +1707,7 @@ http://127.0.0.1:8080/friend/info
 ```json
 
 {
-    "headImg": "http://121.89.166.24/files/photo/1590932913.jpg",
+    "headImg": "http://localhost/files/photo/1590932913.jpg",
     "name": "帅气啊刘",
     "id": "1091756452",
     "relationship": 0,

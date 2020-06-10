@@ -1,23 +1,18 @@
-package com.example.demo.person;
+package com.example.demo.MybaitsInfo;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
 
-public class bait {
+public class Mybait {
     private SqlSession sqlSession=null;
-    public bait(){
+    public Mybait(){
         String resourse="Mapper/mybaits-config.xml";
         try {
             InputStream inputStream= Resources.getResourceAsStream (resourse);
@@ -33,7 +28,7 @@ public class bait {
         return sqlSession;
     }
     public static void main(String[] args) {
-        bait my=new bait ();
+        Mybait my=new Mybait ();
         SqlSession sqlSession=my.getSqlSession ();
         List<passage> pas=sqlSession.selectList ("selectPassage","1091756452");
         for(int i=0;i<pas.size();i++){

@@ -1,13 +1,13 @@
-package com.example.red;
+package com.example.Mredis;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 import java.util.*;
 
-public class fredis {
+public class MyRedis {
     private JedisPool jedisPool;
-    public fredis(){
+    public MyRedis(){
         jedisPool=new JedisPool ("121.89.166.24",6379);
     }
     public Boolean  exist(String key){
@@ -96,7 +96,7 @@ public class fredis {
         return list;
     }
     public static void main(String[] args) {
-        fredis r=new fredis ();
+        MyRedis r=new MyRedis ();
         for(int i=0;i<10;i++) {
             r.set_hot_word ("hello");
 //            r.set_hot_word ("liuyi");

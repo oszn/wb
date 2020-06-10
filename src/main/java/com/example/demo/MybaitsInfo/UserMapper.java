@@ -1,4 +1,4 @@
-package com.example.demo.person;
+package com.example.demo.MybaitsInfo;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

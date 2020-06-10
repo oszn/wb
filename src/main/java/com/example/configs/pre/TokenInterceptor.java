@@ -2,7 +2,7 @@ package com.example.configs.pre;
 
 import com.alibaba.fastjson.JSONObject;
 //import com.zxc.ticketsys.utils.TokenUtil;
-import com.example.red.fredis;
+import com.example.Mredis.MyRedis;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @Component
 public class TokenInterceptor implements HandlerInterceptor {
-    private fredis f=new fredis ();
+    private MyRedis f=new MyRedis ();
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response,Object handler)throws Exception{
         if(request.getMethod().equals("OPTIONS")){

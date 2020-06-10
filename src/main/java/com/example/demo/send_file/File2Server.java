@@ -9,7 +9,7 @@ import java.net.ProtocolException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-public class amd {
+public class File2Server {
     private static final String BOUNDARY = "-------45962402127348";
     private static final String FILE_ENCTYPE = "multipart/form-data";
     private  void inputStreamToFile(InputStream ins, File file) {

@@ -32,5 +32,5 @@ build/
 
 ### java ###
 rest_send.java
-bzd.java
-tfs.java
+Mysql.java
+neosql.java
