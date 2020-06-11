@@ -581,18 +581,18 @@ public static String get(String p) {
 //        System.out.println(time);
 //        System.out.println((new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")).parse(time, new ParsePosition (0)).getTime() / 1000);
 //        long name = (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")).parse(time, new ParsePosition (0)).getTime() / 1000;
-//        Mysql Mysql=new Mysql ();
-//        neosql neosql=new neosql ();
-//        String user="";
-//        String pwd="123456";
-//        String email="null";
-//        String name="robot";
-//        for(int i=5;i<1000;i++) {
+        Mysql Mysql=new Mysql ();
+        neosql neosql=new neosql ();
+        String user="";
+        String pwd="123456";
+        String email="null";
+        String name="robot";
+        for(int i=5;i<1000;i++) {
 //            String answer = Mysql.login (user+String.valueOf (i), pwd, email+String.valueOf (i), name+String.valueOf (i));
-//            System.out.println (email);
-//            neosql.insert_user (user+String.valueOf (i));
-//        }
-//        Mysql.close_conn();
-//        neosql.close_conn();
+            System.out.println (email);
+            neosql.insert_user (user+String.valueOf (i));
+        }
+        Mysql.close_conn();
+        neosql.close_conn();
     }
 }
