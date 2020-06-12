@@ -22,6 +22,6 @@
   "del_link": "match (n1:person)-[c:link]->(n2:person) where n1.id=%s and n2.id=%s delete c",
   "relationship_person2person": "match c=(n1:person),(n2:person)\nwhere n1.id=%s and n2.id=%s\nreturn \ncase\n\twhen (n1)-[:link]->(n2) and (n2)-[:link]->(n1)\n    \tThen 0\n     when (n1)-[:link]->(n2)\n    \tThen 1\n     when (n2)-[:link]->(n1)\n    \tThen 2\n    else 3\nEnd as p",
   "import_word": "match(n:ImpWord) where n.id=%s return  n.name",
-  "sign_word": "match(p:passage),(n:ImpWord)\nwhere p.id=%s and n.id=%s and (%s)\ncreate(p)-[:sign]->(n)",
+  "sign_word": "match(p:passage),(n:ImpWord) where p.id=%s and n.id=%s and (%s) create(p)-[:sign]->(n)",
   "get_write": "match (p)-[:write]->(c)\nwhere p.id=%s\nreturn c.type"
 }

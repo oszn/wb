@@ -16,9 +16,9 @@
   "select_cid": " SELECT CommentId  from WeiboComment where WeiboId='%s' and FromId='%s' and ToId='%s' and CommentContext='%s';",
   "select_count_wb": "SELECT count(*) as n from WeiboInformation where id=%s",
   "update_head_img": "update AccountInformation set headImg='%s' where id='%s'",
-  "select_friends_weibo": "SELECT WeiboId,Id,Time,LikeCount,WeiBoContext from WeiboInformation where %s  ORDER BY Time desc limit 10",
+  "select_friends_weibo": "SELECT WeiboId,Id,Time,LikeCount,WeiBoContext from WeiboInformation where %s  ORDER BY Time desc",
   "select_id_name_img": "select id,name,headImg from AccountInformation",
   "insert_search_record": "insert into SearchRecord(userid,context,type) value(%s,%s,%s)",
-  "sel_interest_wb": "select WeiboId,Id,Time,LikeCount,WeiBoContext from WeiboInformation where %s  ORDER BY Time desc limit 10",
+  "sel_interest_wb": "select WeiboId,Id,Time,LikeCount,WeiBoContext from WeiboInformation where %s  ORDER BY Time desc",
   "sel_interest": "select search,`write` from UserInterest where userid=%s"
 }

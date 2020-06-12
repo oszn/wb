@@ -308,7 +308,10 @@ public static String get(String p) {
             String tp=get_tp (content);
             String result= Mysql.insert_weibo (session,time,content,tp);
             int id= Mysql.how (session,time,content);
-            sens.ins (content, String.valueOf (id),session,tp);
+            new Thread (){public void run(){
+                sens.ins (content, String.valueOf (id),session,tp);
+            }}.start ();
+
             long name = (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")).parse(time, new ParsePosition (0)).getTime() / 1000;
 //            String name=ts.toString ();
             int qq=0;
@@ -321,13 +324,14 @@ public static String get(String p) {
                 String r = Mysql.insert_photo (String.valueOf (id), url);
                 qq++;
             }
+
             /***
              * new mod
              * step 1 分类
              * step 2 将作者和文章都插入neo4j
              * step 3 将分类插入
              */
-
+//            neosql.set_user2sen_sen2impword (tp,String.valueOf (id),content);
             Mysql.close_conn();
             neosql.close_conn ();
             return result;
