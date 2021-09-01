@@ -133,7 +133,7 @@
             <!-- 嵌入式开发需要的jar包 -->
             <groupId>org.neo4j</groupId>
             <artifactId>neo4j</artifactId>
-            <version>3.3.4</version>
+            <version>3.5.0</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
